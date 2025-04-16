@@ -7,11 +7,12 @@ Sistema completo de gerenciamento de vendas e estoque, com funcionalidades de lo
 ## 🔧 Tecnologias Utilizadas
 
 <p align="left">
-  <img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white" alt="Angular" />
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
-  <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white" alt="C#" />
-  <img src="https://img.shields.io/badge/MySQL-00758F?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
+  <img src="https://skillicons.dev/icons?i=cs,angular,mysql,css,html" />
+</p>
+
+<h3>IDEs</h3>
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=visualstudio,vscode," />    
 </p>
 
 ---
