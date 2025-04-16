@@ -31,9 +31,9 @@ Sistema completo de gerenciamento de vendas e estoque, com funcionalidades de lo
 
 ## 👥 Equipe de Desenvolvimento
 
-- **Bruno de Matos**
-- **Lucas Salvador**
-- **Miguel Lonni**
-- **Helio Jose**
+- **Bruno de Matos - LOGIN + CRUD de VENDEDORES**
+- **Lucas Salvador - RELATORIO DE ESTOQUE**
+- **Miguel Lonni - VENDAS**
+- **Helio Jose - CRUD de PRODUTO**
 
 ---
