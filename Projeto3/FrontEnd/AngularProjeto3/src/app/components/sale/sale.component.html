@@ -1,1 +1,6 @@
-<p>sale works!</p>
+<div>
+    <h1>{{date}}</h1> 
+    @for(item of products_sales; track item.id){
+        <p>{{item.product}}: {{item.quantity}}</p>
+    }
+</div>
