@@ -7,6 +7,13 @@ import { environment } from '../../environment/environment.prod';
 @Injectable({
   providedIn: 'root'
 })
+
+export class product_sale {
+  id! : number;
+  product! : string;
+  quantity! : number;
+}
+
 export class SaleService {
 
   private apiUrl = `${environment.apiUrl}/sales`;

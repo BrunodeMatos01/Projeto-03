@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { product_sale } from '../../services/sale.service';
 
 @Component({
   selector: 'app-sale',
@@ -9,7 +10,7 @@ import { Component, Input } from '@angular/core';
 })
 export class SaleComponent {
   @Input()
-  id : number;
+  id! : number;
   @Input()
   date! : Date;
   @Input()
