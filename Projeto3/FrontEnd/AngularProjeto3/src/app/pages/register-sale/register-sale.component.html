@@ -1,1 +1,11 @@
-<p>register-sale works!</p>
+<div class="form-container">
+  <h1>Registrar Venda</h1>
+  <form #form="ngModel" (submit)="save(form)">
+    <div class="mb-3">
+      <label for="date" class="form-label">Data</label>
+      <input type="date" class="form-control" id="date" name="Date" [(ngModel)]="saleRequest.date" required>
+    </div>
+    <button class="btn btn-secondary" type="button" (click)="back()">Voltar</button>
+    <button class="btn btn-success" type="submit">Salvar</button>
+  </form>
+</div>

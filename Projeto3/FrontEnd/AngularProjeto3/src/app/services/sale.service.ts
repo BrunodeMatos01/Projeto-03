@@ -13,6 +13,11 @@ export class product_sale {
   product! : string;
   quantity! : number;
 }
+export class saleRequest {
+  id : number = 0;
+  date! : Date;
+  products! : product_sale[];
+}
 
 export class SaleService {
 
@@ -26,7 +31,9 @@ export class SaleService {
   getById(id : number) : Observable<SaleComponent>{
     return this.http.get<SaleComponent>(`{this.apiUrl}/{id}`).pipe();
   }
-
+  insert(saleRequest : saleRequest) : Observable<object>{
+    return this.http.post(this.apiUrl, saleRequest).pipe();
+  }
   delete(id : number) : Observable<string> {
     return this.http.delete<string>(this.apiUrl).pipe();
   }
