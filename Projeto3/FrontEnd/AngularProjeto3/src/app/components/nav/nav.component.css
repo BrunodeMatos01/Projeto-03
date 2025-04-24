@@ -1,0 +1,39 @@
+nav {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em;
+    align-items: center;
+    display: flex;
+    font-size: 1.5em;
+    justify-content: space-between;
+  }
+  
+  .menu{
+    flex:1;
+    text-align: center;
+  }
+  .menu a{
+    text-decoration: none;
+    color: white; 
+    margin-top: 0 10px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+  }
+  
+  nav a:hover{
+    text-decoration: none;
+  }
+  
+  .logout button{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 5px 10px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
