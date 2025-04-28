@@ -17,7 +17,7 @@ namespace C_Projeto3.Model.Repository
         {
             try
             {
-                var saleToRemove = _appDbContext.sales.FirstOrDefault(a => a.id = id);
+                var saleToRemove = _appDbContext.sales.FirstOrDefault(a => a.id == id);
                 if (saleToRemove != null)
                 {
                     _appDbContext.sales.Remove(saleToRemove);
