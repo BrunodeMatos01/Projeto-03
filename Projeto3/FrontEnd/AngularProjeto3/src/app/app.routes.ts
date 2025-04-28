@@ -11,3 +11,4 @@ export const routes: Routes = [
     {path: '', component: ReportComponent},
     {path: 'register', component: RegisterSaleComponent}
 ];
+

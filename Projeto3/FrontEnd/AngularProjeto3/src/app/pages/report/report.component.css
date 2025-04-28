@@ -1,0 +1,40 @@
+.container-titles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title-2row{
+    width: 100%;
+    display: flex;
+    align-items: space-between;
+    justify-content: space-around;
+}
+.sales-filter , .stock-filter{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    border:1px solid black;
+}
+
+.stock-filter-select{
+    display: flex;
+    background-color: rgb(100, 163, 81);
+    justify-content: space-around;
+}
+
+.sales-filter-select{
+    display: flex;
+    background-color: rgb(100, 163, 81);
+    justify-content: space-around;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.sales-filter-body , .stock-filter-body{
+    height: 500px;
+    width: 100%;
+    background-color: rgb(74, 80, 72);
+}
