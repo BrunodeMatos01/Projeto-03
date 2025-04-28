@@ -1,0 +1,137 @@
+.fullscreen-wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5; 
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+.main-container {
+    width: 100%;
+    height: 400px;
+    max-width: 500px;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-container:hover{
+    box-shadow: 0 1px 10px #2574b9;
+  }
+
+.login-section {
+    width: 80%;
+}
+  .welcome-text p{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #198ff7;
+  }
+  
+  .app-title {
+    font-family: "Tagesschrift", system-ui;
+    font-size: 2.6rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .welcome-message {
+    font-family: "Tagesschrift", system-ui;
+    font-size: 1.5rem;
+    color: #666;
+  }
+  .login-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input-labelE {
+    font-size: 0.9rem;
+    color: #444;
+  }
+  .input-label {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    color: #444;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 0.6rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+  }
+  
+  .input-field:focus {
+    border-color: #4facfe;
+    outline: none;
+  }
+ 
+  .buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+  }
+  
+  .btn-login {
+    margin-left: 20px;
+    padding: 0.7rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .btn-login {
+    background-color: #2574b9;
+    color: white;
+  }
+  
+  .btn-login:hover {
+    background-color: #1e68a8;
+  }
+  
+  
+  .additional-options {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+  }
+  
+  .no-account {
+    color: #555;
+  }
+  
+  .create-account-link {
+    font-size: 13px;
+    color: #2574b9;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .create-account-link:hover {
+    text-decoration: underline;
+  }
+
+  p {
+    padding: 0;
+    margin: 2px;
+  }
