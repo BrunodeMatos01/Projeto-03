@@ -42,8 +42,9 @@
     </div>
 </main>
 <apx-chart
-[series]="chartOptions.series"
-[chart]="chartOptions.chart"
-[xaxis]="chartOptions.xaxis"
-[title]="chartOptions.title">
+*ngIf="chartEstoqueAtual.chart && chartEstoqueAtual.series && chartEstoqueAtual.xaxis && chartEstoqueAtual.title"
+  [series]="chartEstoqueAtual.series"
+  [chart]="chartEstoqueAtual.chart"
+  [xaxis]="chartEstoqueAtual.xaxis"
+  [title]="chartEstoqueAtual.title">
 </apx-chart>
