@@ -25,7 +25,7 @@ namespace projeto3.api.Controllers
         }
 
         [HttpGet(template: "api/Produtos/{id}")]
-        public IActionResult GetProdutoById(Guid id) 
+        public IActionResult GetProdutoById(int id) 
         {
             var consultaProdutos = _repository.GetById(id).Result;
 
@@ -46,7 +46,7 @@ namespace projeto3.api.Controllers
         }
 
         [HttpDelete("api/Produtos/{id}")]
-        public IActionResult excluir(Guid id)
+        public IActionResult excluir(int id)
         {
             try
             {

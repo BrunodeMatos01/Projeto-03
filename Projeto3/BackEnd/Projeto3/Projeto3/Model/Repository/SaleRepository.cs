@@ -13,7 +13,7 @@ namespace C_Projeto3.Model.Repository
             _appDbContext = appDbContext;
         }
 
-        public async Task<bool> Delete(Guid id)
+        public async Task<bool> Delete(int id)
         {
             try
             {
@@ -48,7 +48,7 @@ namespace C_Projeto3.Model.Repository
             await _appDbContext.SaveChangesAsync();
         }
 
-        public async Task<Sale> SearchById(Guid id)
+        public async Task<Sale> SearchById(int id)
         {
             return await _appDbContext.sales.FindAsync(id);
         }

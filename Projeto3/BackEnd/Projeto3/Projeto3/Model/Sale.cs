@@ -5,7 +5,7 @@ namespace C_Projeto3.Model
     public class Sale
     {
         [Key]
-        public Guid id { get; set; }
+        public int id { get; set; }
 
         [Required]
         public DateTime date { get; set; }
