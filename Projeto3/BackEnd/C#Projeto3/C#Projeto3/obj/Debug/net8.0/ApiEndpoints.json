@@ -1,0 +1,133 @@
+[
+  {
+    "ContainingType": "projeto3.api.Controllers.ProdutoController",
+    "Method": "GetProdutos",
+    "RelativePath": "api/Produtos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "projeto3.api.Controllers.ProdutoController",
+    "Method": "Salvar",
+    "RelativePath": "api/Produtos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "produto",
+        "Type": "projeto3.api.Models.Produto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "projeto3.api.Controllers.ProdutoController",
+    "Method": "GetProdutoById",
+    "RelativePath": "api/Produtos/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "projeto3.api.Controllers.ProdutoController",
+    "Method": "excluir",
+    "RelativePath": "api/Produtos/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "C_Projeto3.Controllers.SaleController",
+    "Method": "GetSales",
+    "RelativePath": "api/Sales",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "C_Projeto3.Controllers.SaleController",
+    "Method": "Save",
+    "RelativePath": "api/Sales",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "date",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "items",
+        "Type": "System.Collections.Generic.List\u00601[[C_Projeto3.Model.product_sale, C#Projeto3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "C_Projeto3.Controllers.SaleController",
+    "Method": "GetSalesById",
+    "RelativePath": "api/Sales/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "C_Projeto3.Controllers.SaleController",
+    "Method": "Delete",
+    "RelativePath": "api/Sales/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
