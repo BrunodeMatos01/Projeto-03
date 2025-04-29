@@ -1,0 +1,10 @@
+.table th, .table td {
+    vertical-align: middle;
+  }
+  
+  .table thead th {
+    position: sticky;
+    top: 0;
+    background-color: #212529;
+    color: white;
+  }
