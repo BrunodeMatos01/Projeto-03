@@ -1,4 +1,3 @@
-using C_Projeto3.Model.Repository;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using C_Projeto3.Model.Repository.Interfaces;
@@ -10,32 +9,31 @@ namespace C_Projeto3.Controllers
     [ApiController]
     public class ReportController : ControllerBase
     {
-        private readonly IReportRepository _reportRepository;
+        private readonly IRelatorioRepository _reportRepository;
 
-        public ReportController(IReportRepository reportRepository)
+        public ReportController(IRelatorioRepository reportRepository)
         {
             _reportRepository = reportRepository;
         }
 
-        [HttpGet("mais-vendidos")]
+        [HttpGet("/api/report/best-selling")]
         public async Task<IActionResult> GetProdutosMaisVendidos()
         {
-            var result = await _reportRepository.ProdutosMaisVendidos();
+            var result = await _reportRepository.BuscarProdutosMaisVendidosAsync();
             return Ok(result);
         }
 
-        [HttpGet("vendas-por-data")]
-        public async Task<IActionResult> GetVendasPorData([FromQuery] DateTime inicio, [FromQuery] DateTime fim)
-        {
-            var result = await _reportRepository.VendasPorData(inicio, fim);
-            return Ok(result);
-        }
-
-        [HttpGet("estoque-atual")]
+        [HttpGet("/api/report/stock")]
         public async Task<IActionResult> GetEstoqueAtual()
         {
-            var result = await _reportRepository.EstoqueAtual();
+            var result = await _reportRepository.BuscarEstoqueAtualAsync();
             return Ok(result);
+        }
+        [HttpGet("/api/report/recent-sales")]
+        public async Task<IActionResult> GetVendasRecentes()
+        {
+            var vendas = await _reportRepository.BuscarVendasRecentesAsync();
+            return Ok(vendas);
         }
     }
 }

@@ -1,4 +1,4 @@
-namespace C_Projeto3.Model;
+namespace C_Projeto3.Model.Dtos;
 
 public class ProdutoVendaDto
 {
