@@ -1,5 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
-using projeto3.api.Infra.Data;
+﻿using C_Projeto3.Infra.Data;
+using Microsoft.EntityFrameworkCore;
 using projeto3.api.Models.Repository.Interfaces;
 
 namespace projeto3.api.Models.Repository

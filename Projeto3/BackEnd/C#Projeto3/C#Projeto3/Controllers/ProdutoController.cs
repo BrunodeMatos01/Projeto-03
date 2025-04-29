@@ -1,8 +1,6 @@
 ﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
-using Org.BouncyCastle.Security;
-using projeto3.api.Infra.Data;
 using projeto3.api.Models;
 using projeto3.api.Models.Repository.Interfaces;
 
