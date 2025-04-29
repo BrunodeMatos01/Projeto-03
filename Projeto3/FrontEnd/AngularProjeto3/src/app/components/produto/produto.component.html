@@ -1,0 +1,42 @@
+<div class="container mt-4">
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h2 class="mb-0">Listagem de Produtos</h2>
+    <div>
+      <button class="btn btn-success me-1" style="margin-right: 3px;" (click)="addProduto()">Adicionar</button>
+      <button class="btn btn-secondary" (click)="voltar()">Voltar</button>
+    </div>
+  </div>
+  
+  <div>
+    <div class="table-responsive">
+      <table class="table table-striped table-hover table-bordered">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nome</th>
+            <th scope="col" class="text-end">Valor</th>
+            <th scope="col">Estoque</th>
+            <th scope="col" style="width: 90px;">Ação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let produto of produtosApi">
+            <td>{{ produto.id }}</td>
+            <td>{{ produto.nome }}</td>
+            <td class="text-end">{{ formatCurrency(produto.valor) }}</td>
+            <td>{{ produto.estoque }}</td>
+            <td class="text-nowrap">
+              <button class="btn btn-sm btn-primary p-1" title="Editar" style="margin-right: 3px;" (click)="editarProduto(produto.id)"> <span class="material-icons">edit</span> </button>
+              <button class="btn btn-sm btn-danger p-1" title="Excluir" (click)="removerProduto(produto.id)">
+                <span class="material-icons">delete</span>
+              </button>
+            </td>
+          </tr>
+          <tr *ngIf="produtosApi.length === 0">
+            <td colspan="5" class="text-center">Nenhum produto encontrado</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
