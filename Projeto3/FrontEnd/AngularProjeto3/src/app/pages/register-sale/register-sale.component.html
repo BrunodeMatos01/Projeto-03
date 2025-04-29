@@ -1,6 +1,6 @@
 <div class="form-container">
   <h1>Registrar Venda</h1>
-  <form #form="ngModel" (submit)="save(form)">
+  <form #form="ngForm" (ngSubmit)="save(form)">
     <div class="mb-3">
       <label for="date" class="form-label">Data</label>
       <input type="date" class="form-control" id="date" name="Date" [(ngModel)]="saleRequest.date" required>
