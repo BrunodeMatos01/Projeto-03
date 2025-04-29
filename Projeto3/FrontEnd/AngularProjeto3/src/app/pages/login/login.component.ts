@@ -1,10 +1,10 @@
-import { Component }    from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router, RouterLink } from '@angular/router';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, NgForm } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginService, LoginRequest } from '../../services/login.service';
- 
+
 @Component({
   selector: 'app-login',
   standalone: true,
@@ -17,19 +17,19 @@ export class LoginComponent {
     email: '',
     senha: ''
   };
- 
+
   constructor(private router: Router, private loginService: LoginService) {}
- 
-  CreateAccount() {
+
+  createAccount() {
     this.router.navigate(['/create-account']);
   }
- 
-  login(form: any) {
+
+  login(form: NgForm) {
     if (form.invalid) {
       alert('Preencha todos os campos');
       return;
     }
- 
+
     this.loginService.login(this.loginRequest).subscribe({
       next: (response) => {
         console.log('Login realizado com sucesso!', response);

@@ -6,22 +6,36 @@
         <p class="welcome-message">Welcome back!</p>
       </div>
 
-      <form class="login-form" #form="ngForm" (submit)="login(form)">
+      <form class="login-form" #form="ngForm" (ngSubmit)="login(form)"> 
         <label class="input-labelE" for="email">Email</label>
-        <input class="input-field" type="email" name="email" [(ngModel)]="loginRequest.email" required>
+        <input
+          class="input-field"
+          type="email"
+          id="email"
+          name="email"
+          [(ngModel)]="loginRequest.email"
+          required
+        >
 
         <label class="input-label" for="password">Password</label>
-        <input class="input-field" type="password" name="password" [(ngModel)]="loginRequest.senha" required>
+        <input
+          class="input-field"
+          type="password"
+          id="password"
+          name="senha" 
+          [(ngModel)]="loginRequest.senha"
+          required
+        >
 
         <div class="buttons-container">
           <button class="btn-login" type="submit">Login</button>
         </div>
-
       </form>
     </section>
   </main>
+
   <div class="additional-options">
-      <p class="no-account">Don't have an account?</p>
-      <a class="create-account-link" (click)="CreateAccount()">Create Account</a>
+    <p class="no-account">Don't have an account?</p>
+    <a class="create-account-link" (click)="createAccount()">Create Account</a> 
   </div>
 </div>
