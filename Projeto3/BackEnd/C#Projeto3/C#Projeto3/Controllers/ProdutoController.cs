@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
-using C_Projeto3.Infra.Data;
 using projeto3.api.Models;
 using projeto3.api.Models.Repository.Interfaces;
 
