@@ -1,0 +1,49 @@
+<div class="container-titles">
+    <h1 class="title">Relatorios</h1>
+    <div class="title-2row">
+        <h2 class="estoque">Estoque</h2>
+        <a></a>
+        <h2 class="vendas">Vendas</h2>
+    </div>
+</div>
+<main>
+    <div class="stock-filter">
+        <div class="stock-filter-select">
+            <input type="text" placeholder="Pesquisar">
+            <h3>Filtrar por</h3>
+            <select name="filter" id="filter">
+                <option value="all">Todos</option>
+                <option value="product">Nome</option>
+                <option value="quantity">Quantidade</option>
+                <option value="size">Tamanho</option>
+                <option value="date">Data</option>
+            </select>
+        </div>
+        <div class="stock-filter-body">
+
+        </div>
+    </div>
+
+    <div class="sales-filter">
+        <div class="sales-filter-select">
+            <input type="text" placeholder="Pesquisar">
+            <h3>Filtrar por</h3>
+            <select name="filter" id="filter">
+                <option value="all">Todos</option>
+                <option value="product">Nome</option>
+                <option value="quantity">Quantidade</option>
+                <option value="size">Tamanho</option>
+                <option value="saled">Mais Vendido</option>
+            </select>
+        </div>
+        <div class="sales-filter-body">
+
+        </div>
+    </div>
+</main>
+<apx-chart
+[series]="chartOptions.series"
+[chart]="chartOptions.chart"
+[xaxis]="chartOptions.xaxis"
+[title]="chartOptions.title">
+</apx-chart>

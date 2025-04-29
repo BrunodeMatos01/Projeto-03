@@ -1,0 +1,115 @@
+.navbar {
+  height: 60px;
+  background-color: #2574b9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  color: white;
+  font-family: "Tagesschrift", system-ui;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+
+.nav-left .logout-btn {
+  background: none;
+  border: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.nav-left img {
+  width: 20px;
+  height: 20px;
+}
+
+.nav-center .nav-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-toggle img {
+  width: 28px;
+  height: 28px;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  background-color: white;
+  color: #2574b9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  flex-direction: column;
+  min-width: 180px;
+  z-index: 20;
+}
+
+.dropdown-menu.show {
+  display: flex;
+}
+
+.dropdown-menu a {
+  padding: 12px 16px;
+  text-decoration: none;
+  color: #2574b9;
+  font-weight: bold;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f5f5f5;
+}
+  nav {
+  background-color: #4CAF50;
+  color: white;
+  padding: 1em;
+  align-items: center;
+  display: flex;
+  font-size: 1.5em;
+  justify-content: space-between;
+}
+
+.menu{
+  flex:1;
+  text-align: center;
+}
+.menu a{
+  text-decoration: none;
+  color: white;
+  margin-top: 0 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+nav a:hover{
+  text-decoration: none;
+}
+
+.logout button{
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 5px 10px;
+  font-size: 1em;
+  cursor: pointer;
+
+}

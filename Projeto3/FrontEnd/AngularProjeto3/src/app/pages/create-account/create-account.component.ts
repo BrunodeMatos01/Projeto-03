@@ -1,15 +1,15 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
-import { FormsModule } from '@angular/forms';
-import { CreateAccountService, CreateAccountRequest } from '../../services/create-account.service'; 
+import { FormsModule, NgForm } from '@angular/forms';
+import { CreateAccountService, CreateAccountRequest } from '../../services/create-account.service';
 
 @Component({
   selector: 'app-create-account',
   standalone: true,
   imports: [CommonModule, FormsModule],
   templateUrl: './create-account.component.html',
-  styleUrl: './create-account.component.css'
+  styleUrls: ['./create-account.component.css']
 })
 export class CreateAccountComponent {
   createAccountRequest: CreateAccountRequest = {
@@ -25,7 +25,8 @@ export class CreateAccountComponent {
     this.router.navigate(['/login']);
   }
 
-  createAccount(form: any) {
+  createAccount(form: NgForm) {
+    // Verificação das senhas antes de enviar para o backend
     if (form.invalid || this.createAccountRequest.senha !== this.createAccountRequest.confirmSenha) {
       alert('Verifique os campos e se as senhas conferem.');
       return;

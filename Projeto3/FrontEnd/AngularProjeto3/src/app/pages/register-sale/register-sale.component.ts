@@ -3,6 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { saleRequest, SaleService } from '../../services/sale.service';
+import { NgModel } from '@angular/forms';
 
 @Component({
   selector: 'app-register-sale',

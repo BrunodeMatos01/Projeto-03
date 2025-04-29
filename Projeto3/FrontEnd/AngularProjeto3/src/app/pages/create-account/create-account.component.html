@@ -18,8 +18,12 @@
         <label class="input-label" for="confirm-password">Confirm Password</label>
         <input class="input-field" type="password" name="confirmSenha" [(ngModel)]="createAccountRequest.confirmSenha" placeholder="Confirm your password" required>
 
+        <div *ngIf="createAccountRequest.senha !== createAccountRequest.confirmSenha && form.submitted">
+          <p class="error-message">As senhas não coincidem.</p>
+        </div>
+
         <div class="buttons-container">
-          <button class="btn-login" type="submit">Create</button>
+          <button class="btn-login" type="submit" [disabled]="form.invalid || createAccountRequest.senha !== createAccountRequest.confirmSenha">Create</button>
         </div>
       </form>
     </section>

@@ -1,6 +1,6 @@
-# 🛒 Projeto-03: Sistema de Vendas e Estoque
+# 🛒 Projeto-03: Estoque Inteligente
 
-Sistema completo de gerenciamento de vendas e estoque, com funcionalidades de login de vendedores, controle de produtos, verificação de estoque e geração de relatórios detalhados.
+Sistema completo de gerenciamento de estoque, com funcionalidades de login de vendedores, controle de produtos, verificação de estoque e geração de relatórios detalhados.
 
 ---
 
