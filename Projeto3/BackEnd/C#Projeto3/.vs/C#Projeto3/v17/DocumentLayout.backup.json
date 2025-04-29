@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Projeto-03\\Projeto3\\BackEnd\\C#Projeto3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D95739EA-8155-4242-8803-6638637DD63A}|C#Projeto3\\C#Projeto3.csproj|c:\\projeto-03\\projeto3\\backend\\c#projeto3\\c#projeto3\\controllers\\salecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D95739EA-8155-4242-8803-6638637DD63A}|C#Projeto3\\C#Projeto3.csproj|solutionrelative:c#projeto3\\controllers\\salecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D95739EA-8155-4242-8803-6638637DD63A}|C#Projeto3\\C#Projeto3.csproj|c:\\projeto-03\\projeto3\\backend\\c#projeto3\\c#projeto3\\model\\repository\\interfaces\\isalerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D95739EA-8155-4242-8803-6638637DD63A}|C#Projeto3\\C#Projeto3.csproj|solutionrelative:c#projeto3\\model\\repository\\interfaces\\isalerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D95739EA-8155-4242-8803-6638637DD63A}|C#Projeto3\\C#Projeto3.csproj|c:\\projeto-03\\projeto3\\backend\\c#projeto3\\c#projeto3\\model\\repository\\salerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D95739EA-8155-4242-8803-6638637DD63A}|C#Projeto3\\C#Projeto3.csproj|solutionrelative:c#projeto3\\model\\repository\\salerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D95739EA-8155-4242-8803-6638637DD63A}|C#Projeto3\\C#Projeto3.csproj|c:\\projeto-03\\projeto3\\backend\\c#projeto3\\c#projeto3\\infra\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D95739EA-8155-4242-8803-6638637DD63A}|C#Projeto3\\C#Projeto3.csproj|solutionrelative:c#projeto3\\infra\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D95739EA-8155-4242-8803-6638637DD63A}|C#Projeto3\\C#Projeto3.csproj|c:\\projeto-03\\projeto3\\backend\\c#projeto3\\c#projeto3\\model\\product_sale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D95739EA-8155-4242-8803-6638637DD63A}|C#Projeto3\\C#Projeto3.csproj|solutionrelative:c#projeto3\\model\\product_sale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D95739EA-8155-4242-8803-6638637DD63A}|C#Projeto3\\C#Projeto3.csproj|c:\\projeto-03\\projeto3\\backend\\c#projeto3\\c#projeto3\\model\\sale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D95739EA-8155-4242-8803-6638637DD63A}|C#Projeto3\\C#Projeto3.csproj|solutionrelative:c#projeto3\\model\\sale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D95739EA-8155-4242-8803-6638637DD63A}|C#Projeto3\\C#Projeto3.csproj|c:\\projeto-03\\projeto3\\backend\\c#projeto3\\c#projeto3\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D95739EA-8155-4242-8803-6638637DD63A}|C#Projeto3\\C#Projeto3.csproj|solutionrelative:c#projeto3\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D95739EA-8155-4242-8803-6638637DD63A}|C#Projeto3\\C#Projeto3.csproj|c:\\projeto-03\\projeto3\\backend\\c#projeto3\\c#projeto3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D95739EA-8155-4242-8803-6638637DD63A}|C#Projeto3\\C#Projeto3.csproj|solutionrelative:c#projeto3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ISaleRepository.cs",
+              "DocumentMoniker": "C:\\Projeto-03\\Projeto3\\BackEnd\\C#Projeto3\\C#Projeto3\\Model\\Repository\\Interfaces\\ISaleRepository.cs",
+              "RelativeDocumentMoniker": "C#Projeto3\\Model\\Repository\\Interfaces\\ISaleRepository.cs",
+              "ToolTip": "C:\\Projeto-03\\Projeto3\\BackEnd\\C#Projeto3\\C#Projeto3\\Model\\Repository\\Interfaces\\ISaleRepository.cs",
+              "RelativeToolTip": "C#Projeto3\\Model\\Repository\\Interfaces\\ISaleRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T09:19:10.599Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SaleRepository.cs",
+              "DocumentMoniker": "C:\\Projeto-03\\Projeto3\\BackEnd\\C#Projeto3\\C#Projeto3\\Model\\Repository\\SaleRepository.cs",
+              "RelativeDocumentMoniker": "C#Projeto3\\Model\\Repository\\SaleRepository.cs",
+              "ToolTip": "C:\\Projeto-03\\Projeto3\\BackEnd\\C#Projeto3\\C#Projeto3\\Model\\Repository\\SaleRepository.cs",
+              "RelativeToolTip": "C#Projeto3\\Model\\Repository\\SaleRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T09:16:04.941Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "product_sale.cs",
+              "DocumentMoniker": "C:\\Projeto-03\\Projeto3\\BackEnd\\C#Projeto3\\C#Projeto3\\Model\\product_sale.cs",
+              "RelativeDocumentMoniker": "C#Projeto3\\Model\\product_sale.cs",
+              "ToolTip": "C:\\Projeto-03\\Projeto3\\BackEnd\\C#Projeto3\\C#Projeto3\\Model\\product_sale.cs",
+              "RelativeToolTip": "C#Projeto3\\Model\\product_sale.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T09:13:13.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Sale.cs",
+              "DocumentMoniker": "C:\\Projeto-03\\Projeto3\\BackEnd\\C#Projeto3\\C#Projeto3\\Model\\Sale.cs",
+              "RelativeDocumentMoniker": "C#Projeto3\\Model\\Sale.cs",
+              "ToolTip": "C:\\Projeto-03\\Projeto3\\BackEnd\\C#Projeto3\\C#Projeto3\\Model\\Sale.cs",
+              "RelativeToolTip": "C#Projeto3\\Model\\Sale.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T09:12:42.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Projeto-03\\Projeto3\\BackEnd\\C#Projeto3\\C#Projeto3\\appsettings.json",
+              "RelativeDocumentMoniker": "C#Projeto3\\appsettings.json",
+              "ToolTip": "C:\\Projeto-03\\Projeto3\\BackEnd\\C#Projeto3\\C#Projeto3\\appsettings.json",
+              "RelativeToolTip": "C#Projeto3\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-29T01:24:24.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SaleController.cs",
+              "DocumentMoniker": "C:\\Projeto-03\\Projeto3\\BackEnd\\C#Projeto3\\C#Projeto3\\Controllers\\SaleController.cs",
+              "RelativeDocumentMoniker": "C#Projeto3\\Controllers\\SaleController.cs",
+              "ToolTip": "C:\\Projeto-03\\Projeto3\\BackEnd\\C#Projeto3\\C#Projeto3\\Controllers\\SaleController.cs",
+              "RelativeToolTip": "C#Projeto3\\Controllers\\SaleController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAYwBcAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T01:16:18.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Projeto-03\\Projeto3\\BackEnd\\C#Projeto3\\C#Projeto3\\Program.cs",
+              "RelativeDocumentMoniker": "C#Projeto3\\Program.cs",
+              "ToolTip": "C:\\Projeto-03\\Projeto3\\BackEnd\\C#Projeto3\\C#Projeto3\\Program.cs",
+              "RelativeToolTip": "C#Projeto3\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAC8AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T01:14:46.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Projeto-03\\Projeto3\\BackEnd\\C#Projeto3\\C#Projeto3\\Infra\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "C#Projeto3\\Infra\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Projeto-03\\Projeto3\\BackEnd\\C#Projeto3\\C#Projeto3\\Infra\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "C#Projeto3\\Infra\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T01:13:42.238Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
