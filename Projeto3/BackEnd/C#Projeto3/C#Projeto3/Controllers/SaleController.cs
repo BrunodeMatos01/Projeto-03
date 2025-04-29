@@ -21,7 +21,7 @@ namespace C_Projeto3.Controllers
         }
 
         [HttpGet("api/Sales/{id}")]
-        public IActionResult GetSalesById(Guid id)
+        public IActionResult GetSalesById(int id)
         {
             var result = _saleRepository.SearchById(id).Result;
             if (result == null)
@@ -40,7 +40,7 @@ namespace C_Projeto3.Controllers
         }
 
         [HttpDelete("api/Sales/{id}")]
-        public IActionResult Delete([FromQuery]Guid id)
+        public IActionResult Delete([FromQuery]int id)
         {
             var result = _saleRepository.Delete(id).Result;
             return Ok(id);

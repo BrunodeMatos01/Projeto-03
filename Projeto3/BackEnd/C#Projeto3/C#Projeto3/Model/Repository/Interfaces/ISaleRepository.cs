@@ -3,10 +3,10 @@
     public interface ISaleRepository
     {
         Task<List<Sale>> List();
-        Task<Sale> SearchById(Guid id);
+        Task<Sale> SearchById(int id);
 
         Task Save(Sale sale);
         Task Edit(Sale sale);
-        Task<bool> Delete(Guid id);
+        Task<bool> Delete(int id);
     }
 }

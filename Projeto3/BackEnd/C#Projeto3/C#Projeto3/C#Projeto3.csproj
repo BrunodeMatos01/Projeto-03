@@ -8,16 +8,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Controllers\Objects\**" />
+    <Content Remove="Controllers\Objects\**" />
+    <EmbeddedResource Remove="Controllers\Objects\**" />
+    <None Remove="Controllers\Objects\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.13">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="MySql.Data" Version="9.3.0" />
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="8.0.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\Objects\" />
     <Folder Include="Infra\Data\" />
     <Folder Include="Model\Repository\Interfaces\" />
   </ItemGroup>
