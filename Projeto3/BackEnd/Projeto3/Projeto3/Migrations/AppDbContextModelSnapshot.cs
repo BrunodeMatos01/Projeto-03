@@ -24,9 +24,11 @@ namespace C_Projeto3.Migrations
 
             modelBuilder.Entity("C_Projeto3.Model.Sale", b =>
                 {
-                    b.Property<Guid>("id")
+                    b.Property<int>("id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("char(36)");
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("id"));
 
                     b.Property<DateTime>("date")
                         .HasColumnType("datetime(6)");
@@ -63,21 +65,23 @@ namespace C_Projeto3.Migrations
 
             modelBuilder.Entity("C_Projeto3.Model.product_sale", b =>
                 {
-                    b.Property<Guid>("id")
+                    b.Property<int>("id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("char(36)");
+                        .HasColumnType("int");
 
-                    b.Property<Guid?>("Saleid")
-                        .HasColumnType("char(36)");
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("id"));
 
-                    b.Property<Guid>("product_id")
-                        .HasColumnType("char(36)");
+                    b.Property<int?>("Saleid")
+                        .HasColumnType("int");
+
+                    b.Property<int>("product_id")
+                        .HasColumnType("int");
 
                     b.Property<int>("quantity")
                         .HasColumnType("int");
 
-                    b.Property<Guid>("sale_id")
-                        .HasColumnType("char(36)");
+                    b.Property<int>("sale_id")
+                        .HasColumnType("int");
 
                     b.HasKey("id");
 
@@ -88,9 +92,11 @@ namespace C_Projeto3.Migrations
 
             modelBuilder.Entity("projeto3.api.Models.Produto", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("char(36)");
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<double>("Estoque")
                         .HasColumnType("double");

@@ -2,6 +2,7 @@ using C_Projeto3.Infra.Data;
 using C_Projeto3.Model.Repository.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using C_Projeto3.Model.Dtos;
+using System.Linq;
 
 namespace C_Projeto3.Model.Repository
 {
@@ -28,16 +29,18 @@ namespace C_Projeto3.Model.Repository
 
         public async Task<List<ProdutoVendaDto>> BuscarProdutosMaisVendidosAsync()
         {
-            return await _context.product_sales
-                .GroupBy(ps => new { ps.product_id })
+            var resultado = await _context.product_sales
+                .GroupBy(ps => ps.product_id)
                 .Select(g => new ProdutoVendaDto
                 {
-                    ProdutoId = g.Key.product_id,
+                    ProdutoId = g.Key,
                     QuantidadeVendida = g.Sum(x => x.quantity)
                 })
                 .OrderByDescending(x => x.QuantidadeVendida)
                 .Take(10)
                 .ToListAsync();
+
+            return resultado;
         }
         public async Task<List<Sale>> BuscarVendasRecentesAsync()
         {

@@ -5,7 +5,7 @@ namespace projeto3.api.Models
     public class Produto
     {
         [Key]
-        public Guid Id { get; set; }
+        public int Id { get; set; }
         [Required]
         public string Nome { get; set; }
         [Required]

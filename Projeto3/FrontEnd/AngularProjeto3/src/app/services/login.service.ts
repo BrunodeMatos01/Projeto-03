@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, tap } from 'rxjs';
 
 export interface LoginRequest {
   email: string;
@@ -17,7 +17,7 @@ export interface LoginResponse {
 })
 export class LoginService {
 
-  private apiUrl = 'https://localhost:5001/api/login'; 
+  private apiUrl = 'https://localhost:5001/api'; 
 
   constructor(private http: HttpClient) {}
 
@@ -26,3 +26,4 @@ export class LoginService {
   }
   
 }
+

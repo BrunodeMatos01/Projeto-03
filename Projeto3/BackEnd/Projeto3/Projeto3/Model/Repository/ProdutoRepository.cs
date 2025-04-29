@@ -12,7 +12,7 @@ namespace projeto3.api.Models.Repository
         {
             _appDbContext = appDbContext;
         }
-        public async Task<Produto> GetById(Guid id)
+        public async Task<Produto> GetById(int id)
         {
             return await _appDbContext.Produtos.FindAsync(id);
         }
@@ -33,7 +33,7 @@ namespace projeto3.api.Models.Repository
                 }
                 #endregion
 
-                if (produto.Id > Guid.Empty)
+                if (produto.Id > 0)
                 {
                     var produtoEditar = _appDbContext.Produtos.FirstOrDefault(a => a.Id == produto.Id);
 
@@ -79,7 +79,7 @@ namespace projeto3.api.Models.Repository
             }
         }
 
-        public async Task<bool> Excluir(Guid id)
+        public async Task<bool> Excluir(int id)
         {
             try
             {
