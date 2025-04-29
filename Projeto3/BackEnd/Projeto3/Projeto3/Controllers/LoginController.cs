@@ -3,9 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using C_Projeto3.Controllers.Objects;
 using C_Projeto3.Infra.Data;
 using C_Projeto3.Model;
-using System.Security.Cryptography;
-using System.Text;
-
+using C_Projeto3.Utils;
 
 namespace C_Projeto3.Controllers
 {
@@ -25,12 +23,7 @@ namespace C_Projeto3.Controllers
         {
             var user = await _context.Users.FirstOrDefaultAsync(u => u.Email == request.email);
 
-            if (user == null)
-            {
-                return Unauthorized(new { message = "Email ou senha incorretos" });
-            }
-
-            if (!VerifyPassword(request.senha, user.SenhaHash))
+            if (user == null || !CriptografiaSenha.VerificarSenha(request.senha, user.SenhaHash))
             {
                 return Unauthorized(new { message = "Email ou senha incorretos" });
             }
@@ -41,17 +34,6 @@ namespace C_Projeto3.Controllers
             };
 
             return Ok(response);
-        }
-
-        private bool VerifyPassword(string password, string storedHash)
-        {
-            using (var sha256 = SHA256.Create())
-            {
-                var bytes = Encoding.UTF8.GetBytes(password);
-                var hash = sha256.ComputeHash(bytes);
-                var hashedPassword = Convert.ToBase64String(hash);
-                return storedHash == hashedPassword;
-            }
         }
     }
 }

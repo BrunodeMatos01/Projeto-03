@@ -12,29 +12,26 @@ import { filter } from 'rxjs/operators';
   styleUrl: './nav.component.css'
 })
 export class NavComponent {
-  route = new Router;
   showNavbar = true;
-
   menuOpen = false;
- 
-  constructor(private router: Router) {}
- 
+
+  constructor(private router: Router) {
+    this.router.events.pipe(
+      filter(event => event instanceof NavigationEnd)
+    ).subscribe(event => {
+      const nav = event as NavigationEnd; // Type assertion
+      const hiddenRoutes = ['/login', '/create-account'];
+      this.showNavbar = !hiddenRoutes.includes(nav.urlAfterRedirects);
+    });
+  }
+  
+
   toggleMenu() {
-
     this.menuOpen = !this.menuOpen;
-
   }
- 
+
   onLogout() {
-
-    // Limpa dados de autenticação (ajuste conforme seu projeto)
-
     localStorage.clear();
- 
-    // Redireciona para a tela de login
-
     this.router.navigate(['/login']);
-
   }
- 
 }

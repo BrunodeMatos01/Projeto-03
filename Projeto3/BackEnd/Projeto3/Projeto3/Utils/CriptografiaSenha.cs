@@ -7,21 +7,19 @@ namespace C_Projeto3.Utils
     {
         public static string CriptografarSenha(string senha)
         {
-            using var sha1 = SHA1.Create();
+            using var sha256 = SHA256.Create();
             byte[] bytesSenha = Encoding.UTF8.GetBytes(senha);
-            byte[] hashSenha = sha1.ComputeHash(bytesSenha);
-            StringBuilder sb = new StringBuilder();
-
-            foreach (var t in hashSenha)
-            {
-                sb.Append(t.ToString("X2"));
-            }
-            return sb.ToString();
+            byte[] hashSenha = sha256.ComputeHash(bytesSenha);
+            return Convert.ToBase64String(hashSenha);
         }
 
-        internal static bool VerificarSenha(string password, string storedHash)
+        public static bool VerificarSenha(string senha, string hashArmazenado)
         {
-            throw new NotImplementedException();
+            using var sha256 = SHA256.Create();
+            byte[] bytesSenha = Encoding.UTF8.GetBytes(senha);
+            byte[] hashSenha = sha256.ComputeHash(bytesSenha);
+            string senhaHash = Convert.ToBase64String(hashSenha);
+            return senhaHash == hashArmazenado;
         }
     }
 }

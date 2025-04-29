@@ -1,23 +1,23 @@
- 
-<nav class="navbar">
-    <div class="nav-left">
-      <button class="logout-btn" (click)="onLogout()">
-        <img src="https://img.icons8.com/ios-filled/24/ffffff/logout-rounded.png" alt="Logout" />
-      </button>
+
+<nav class="navbar" *ngIf="showNavbar">
+  <div class="nav-left">
+    <button class="logout-btn" (click)="onLogout()">
+      <img src="https://img.icons8.com/ios-filled/24/ffffff/logout-rounded.png" alt="Logout" />
+    </button>
+  </div>
+
+  <div class="nav-center">
+    <h1 class="nav-title">Estoque Inteligente</h1>
+  </div>
+
+  <div class="nav-right">
+    <button class="menu-toggle" (click)="toggleMenu()">
+      <img src="https://img.icons8.com/material-rounded/24/ffffff/menu--v1.png" alt="Menu" />
+    </button>
+    <div class="dropdown-menu" [class.show]="menuOpen">
+      <a routerLink="/produtos">Ver Produtos</a>
+      <a routerLink="/registro-vendas">Registro de Vendas</a>
+      <a routerLink="/produto-cadastro">Produto Cadastro</a>
     </div>
- 
-    <div class="nav-center">
-      <h1 class="nav-title">Estoque Inteligente</h1>
-    </div>
- 
-    <div class="nav-right">
-      <button class="menu-toggle" (click)="toggleMenu()">
-        <img src="https://img.icons8.com/material-rounded/24/ffffff/menu--v1.png" alt="Menu" />
-      </button>
-      <div class="dropdown-menu" [class.show]="menuOpen">
-        <a routerLink="/produtos">Ver Produtos</a>
-        <a routerLink="/registro-vendas">Registro de Vendas</a>
-        <a routerLink="/produto-cadastro">Produto Cadastro</a>
-      </div>
-    </div>
-  </nav>
+  </div>
+</nav>

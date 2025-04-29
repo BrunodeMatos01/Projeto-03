@@ -4,6 +4,7 @@ using C_Projeto3.Model.Repository;
 using C_Projeto3.Model.Repository.Interfaces;
 using projeto3.api.Models.Repository;
 using projeto3.api.Models.Repository.Interfaces;
+using System.Text.Json;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,10 +24,15 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 // Registrar todos os repositórios
 builder.Services.AddScoped<IProdutoRepository, ProdutoRepository>();
 builder.Services.AddScoped<ISaleRepository, SaleRepository>();
-builder.Services.AddScoped<IRelatorioRepository, RelatorioRepository>(); // se for diferente de Report
+builder.Services.AddScoped<IRelatorioRepository, RelatorioRepository>(); 
 
 // Adicionar serviços MVC e Swagger
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.PropertyNamingPolicy = JsonNamingPolicy.CamelCase;
+    });
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
