@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-
 namespace C_Projeto3.Model.Repository.Interfaces
 {
     public interface IRelatorioRepository

@@ -16,7 +16,7 @@ builder.Services.AddDbContext<AppDbContext>(options => options.UseMySql(
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddScoped<IReportRepository, ReportRepository>();
+builder.Services.AddScoped<IRelatorioRepository, RelatorioRepository>();
 
 builder.Services.AddSwaggerGen();
 
