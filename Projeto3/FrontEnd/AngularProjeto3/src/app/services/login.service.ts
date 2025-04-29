@@ -7,6 +7,11 @@ export interface LoginRequest {
   senha: string;
 }
 
+export interface LoginResponse {
+  token: string;
+}
+
+
 @Injectable({
   providedIn: 'root'
 })
@@ -16,7 +21,8 @@ export class LoginService {
 
   constructor(private http: HttpClient) {}
 
-  login(loginRequest: LoginRequest): Observable<any> {
-    return this.http.post(`${this.apiUrl}/login`, loginRequest);
+  login(loginRequest: LoginRequest): Observable<LoginResponse> {
+    return this.http.post<LoginResponse>(`${this.apiUrl}/login`, loginRequest);
   }
+  
 }

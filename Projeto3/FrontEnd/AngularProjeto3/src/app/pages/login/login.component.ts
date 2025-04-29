@@ -29,10 +29,13 @@ export class LoginComponent {
       alert('Preencha todos os campos');
       return;
     }
- 
+  
     this.loginService.login(this.loginRequest).subscribe({
       next: (response) => {
         console.log('Login realizado com sucesso!', response);
+  
+        localStorage.setItem('authToken', response.token);
+  
         this.router.navigate(['/register-sale']);
       },
       error: (error) => {
@@ -41,4 +44,5 @@ export class LoginComponent {
       }
     });
   }
+  
 }
