@@ -14,11 +14,11 @@ export interface CreateAccountRequest {
 })
 export class CreateAccountService {
 
-  private apiUrl = 'https://localhost:5001/api/auth';
+  private apiUrl = 'https://localhost:5001/api/account';
 
   constructor(private http: HttpClient) {}
 
   createAccount(createAccountRequest: CreateAccountRequest): Observable<any> {
-    return this.http.post(`${this.apiUrl}/register`, createAccountRequest);
+    return this.http.post(`${this.apiUrl}/create`, createAccountRequest);
   }
 }

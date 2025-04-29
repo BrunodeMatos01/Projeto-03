@@ -17,7 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\Objects\" />
     <Folder Include="Infra\Data\" />
     <Folder Include="Model\Repository\Interfaces\" />
   </ItemGroup>

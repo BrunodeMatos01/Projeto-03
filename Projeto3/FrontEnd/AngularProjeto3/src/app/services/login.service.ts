@@ -12,7 +12,7 @@ export interface LoginRequest {
 })
 export class LoginService {
 
-  private apiUrl = 'https://localhost:5001/api/auth'; 
+  private apiUrl = 'https://localhost:5001/api/login'; 
 
   constructor(private http: HttpClient) {}
 
