@@ -1,28 +1,27 @@
 <div class="fullscreen-wrapper">
-    <main class="main-container">
-      <section class="login-section">
-        <div class="welcome-text">
-          <p class="app-title">Smart Stock</p>
-          <p class="welcome-message">Welcome back!</p>
-        </div>
-  
-        <form class="login-form" #form="ngForm" (submit)="login(form)">
-          <label class="input-labelE" for="email">Email</label>
-          <input class="input-field" type="email" name="email" [(ngModel)]="loginRequest.email" required>
-  
-          <label class="input-label" for="password">Password</label>
-          <input class="input-field" type="password" name="password" [(ngModel)]="loginRequest.senha" required>
-  
-          <div class="buttons-container">
-            <button class="btn-login" type="button">Login</button>
-          </div>
+  <main class="main-container">
+    <section class="login-section">
+      <div class="welcome-text">
+        <p class="app-title">Smart Stock</p>
+        <p class="welcome-message">Welcome back!</p>
+      </div>
 
-        </form>
-      </section>
-    </main>
-    <div class="additional-options">
-        <p class="no-account">Don't have an account?</p>
-        <a class="create-account-link" (click)="CreateAccount()">Create Account</a>
-    </div>
+      <form class="login-form" #form="ngForm" (submit)="login(form)">
+        <label class="input-labelE" for="email">Email</label>
+        <input class="input-field" type="email" name="email" [(ngModel)]="loginRequest.email" required>
+
+        <label class="input-label" for="password">Password</label>
+        <input class="input-field" type="password" name="password" [(ngModel)]="loginRequest.senha" required>
+
+        <div class="buttons-container">
+          <button class="btn-login" type="submit">Login</button>
+        </div>
+
+      </form>
+    </section>
+  </main>
+  <div class="additional-options">
+      <p class="no-account">Don't have an account?</p>
+      <a class="create-account-link" (click)="CreateAccount()">Create Account</a>
   </div>
-  
+</div>

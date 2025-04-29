@@ -3,7 +3,6 @@ import { Component, Input } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ProdutoService } from '../../services/produto.service';
-
 @Component({
   selector: 'app-produto',
   standalone: true,

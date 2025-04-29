@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 import { Router, RouterLink } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { LoginService, LoginRequest } from '../../services/login.service'; 
-
+import { LoginService, LoginRequest } from '../../services/login.service';
+ 
 @Component({
   selector: 'app-login',
   standalone: true,
@@ -17,23 +17,23 @@ export class LoginComponent {
     email: '',
     senha: ''
   };
-
+ 
   constructor(private router: Router, private loginService: LoginService) {}
-
+ 
   CreateAccount() {
     this.router.navigate(['/create-account']);
   }
-
+ 
   login(form: any) {
     if (form.invalid) {
       alert('Preencha todos os campos');
       return;
     }
-
+ 
     this.loginService.login(this.loginRequest).subscribe({
       next: (response) => {
         console.log('Login realizado com sucesso!', response);
-        this.router.navigate(['/home']);
+        this.router.navigate(['/register-sale']);
       },
       error: (error) => {
         console.error('Erro ao fazer login:', error);

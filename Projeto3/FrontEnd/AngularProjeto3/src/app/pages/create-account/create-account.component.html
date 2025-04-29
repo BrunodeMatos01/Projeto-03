@@ -4,27 +4,31 @@
       <div class="welcome-text">
         <p class="welcome-message">Create your account!</p>
       </div>
-
+ 
       <form class="login-form" #form="ngForm" (ngSubmit)="createAccount(form)">
         <label class="input-labelE" for="name">Nome</label>
         <input class="input-field" type="text" name="nome" [(ngModel)]="createAccountRequest.nome" placeholder="Full name" required>
-
+ 
         <label class="input-label" for="email">Email</label>
         <input class="input-field" type="email" name="email" [(ngModel)]="createAccountRequest.email" placeholder="Enter your email" required>
-
+ 
         <label class="input-label" for="password">Password</label>
         <input class="input-field" type="password" name="senha" [(ngModel)]="createAccountRequest.senha" placeholder="Enter your password" required>
-
+ 
         <label class="input-label" for="confirm-password">Confirm Password</label>
         <input class="input-field" type="password" name="confirmSenha" [(ngModel)]="createAccountRequest.confirmSenha" placeholder="Confirm your password" required>
-
+ 
+        <div *ngIf="createAccountRequest.senha !== createAccountRequest.confirmSenha && form.submitted">
+          <p class="error-message">As senhas não coincidem.</p>
+        </div>
+ 
         <div class="buttons-container">
-          <button class="btn-login" type="submit">Create</button>
+          <button class="btn-login" type="submit" [disabled]="form.invalid || createAccountRequest.senha !== createAccountRequest.confirmSenha">Create</button>
         </div>
       </form>
     </section>
   </main>
-
+ 
   <div class="additional-options">
     <p class="no-account">Already have an account?</p>
     <a class="create-account-link" (click)="BackToLogin()">Login</a>
